@@ -1,0 +1,118 @@
+.FooterContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(53, 54, 54);
+}
+
+hr{
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(143, 143, 143);
+}
+
+.uparrow{
+    color: rgb(235, 235, 235);
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+.uparrow:hover{
+    transform: translateY(-20%);
+}
+
+.instagram{
+    border-radius: 10px;
+    padding-left: 2px;
+    padding-right: 2px;    
+}
+
+.instagram:hover{
+    color: #fff;
+    background:linear-gradient(to top right,yellow,#feda75, orange,rgb(250,126,30) , #d62976, rgb(184, 47, 191),purple, blue);
+}
+
+.github{
+    border-radius: 50%;
+}
+
+.github:hover{
+    background-color: black;
+}
+
+.twitter:hover{
+    color: rgb(0, 119, 255);
+}
+
+.linkedin:hover{
+    color: rgb(0, 119, 255);
+}
+
+.socialmedia{
+    margin-top: 30px;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_text{
+    color: rgb(143, 143, 143);
+    margin-top: 0;
+}
+
+
+
+@media (max-width:900px){
+    .uparrow{
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .socialmedia{
+        width: 400px;
+    }
+}
+
+
+@media (max-width:450px){
+    .uparrow{
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .uparrow{
+        font-size: 20px;
+    }
+    .socialmedia{
+        width: 200px;
+    }
+    .footer_text{
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width:300px){
+    .uparrow{
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .instagram{
+        border-radius: 5px;
+        width: max-content;
+    }
+
+    .uparrow{
+        font-size: 16px;
+    }
+    .socialmedia{
+        width: 150px;
+    }
+    .footer_text{
+        font-size:7px;
+    }
+}

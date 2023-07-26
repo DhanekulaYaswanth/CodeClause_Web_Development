@@ -1,0 +1,215 @@
+.maincontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  width: 100%;
+}
+
+.timesetter{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+}
+
+.numbers{
+    text-align: center;
+
+  }
+
+.numberfirst,.numberlast{
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: gray;
+  font-family:monospace;
+}
+
+.numberup,.numberdown{
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(80, 80, 80);
+  font-family:monospace;
+}
+
+.numbermiddle{
+    width: 100px;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    animation-duration: 1s;
+    font-family:monospace;
+
+}
+
+
+  
+  .numbers h1 {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+
+.layout{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    width: max-content;
+}
+
+.icon{
+    cursor: pointer;
+    color: rgb(68, 68, 68);
+    font-size: 50px;
+}
+
+.icon:hover{
+    color: rgb(0, 0, 0);
+}
+
+
+
+.starticon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playbutton{
+  font-size: 30px;
+  padding: 5px;
+  padding-left: 20px;
+  border: 1px solid black;
+  padding-right: 20px;
+  background-color: transparent;
+  border-radius: 5px;
+  outline: 1px solid black;
+  transition: .6s;
+  cursor: pointer;
+  margin-top: 20px;
+  font-family:monospace;
+}
+
+.playbutton:hover{
+  outline-offset: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(31, 30, 30);
+}
+
+.startedbuttons{
+  display: flex;
+  position: relative;
+  width: 300px;
+  justify-content: space-around;
+}
+
+.startingtimer{
+  color: white;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  font-size: auto;
+}
+
+
+@media (max-width:1200px) {
+  .maincontainer{
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width:801px) {
+    .maincontainer{
+      font-size: 13px;
+    }
+    .numbers{
+      text-align: center;
+    }
+    .icon{
+      font-size: 35px;
+    }
+    .numberfirst,.numberlast{
+      font-size: 20px;
+    }
+    .numberup,.numberdown{
+      font-size: 30px;
+    }
+    .numbermiddle{
+      font-size: 40px;
+    }
+    .layout{
+          margin: 0px;
+    }
+    .playbutton{
+      margin-top: 20px;
+      font-size: 20px;
+    }
+}
+
+@media (max-width:500px) {
+  .maincontainer{
+    font-size: 12px;
+  }
+  .icon{
+    font-size: 30px;
+  }
+  .numberfirst,.numberlast{
+    font-size: 16px;
+  }
+  .numberup,.numberdown{
+    font-size: 25px;
+  }
+  .numbermiddle{
+    font-size: 30px;
+  }
+  .layout{
+        margin: 0px;
+  }
+  .numbermiddle{
+    width: 80px;
+  }
+  .playbutton{
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+@media (max-width:300px) {
+  .maincontainer{
+    width: 100%;
+    font-size: 10px;
+  }
+  .icon{
+    font-size: 30px;
+  }
+  .numberfirst,.numberlast{
+    font-size: 13px;
+  }
+  .numberup,.numberdown{
+    font-size: 20px;
+  }
+  .numbermiddle{
+    font-size: 25px;
+  }
+  .starticon{
+    width: 80%;
+  }
+  .playbutton{
+    font-size: 12px;
+  } 
+}

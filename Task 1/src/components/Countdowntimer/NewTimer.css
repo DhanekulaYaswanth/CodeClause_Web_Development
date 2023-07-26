@@ -1,0 +1,176 @@
+.startingtimer{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    position: relative;
+}
+
+.newtimer{
+    display: flex;
+    font-size: 50px;
+    position: relative;
+}
+
+.colon{
+    margin-top: 0px;
+    height: max-content;
+    position: absolute;
+    bottom: -26px;
+    right: -37px;
+}
+
+
+.countdownnumbers{
+    margin-top: 0px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+
+
+.countdownlabels{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+}
+
+.countdownlabels>p{
+    color: rgb(15, 14, 42);
+}
+
+.progressbar{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+.progressbarindicator{
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background-attachment: fixed;
+    transition: 1.5s;
+}
+
+
+
+
+@media (max-width:850px){
+
+    .countdownlabels{
+        font-size: 30px;
+        /* border: 1px solid; */
+    }
+    .colon{
+        font-size: 40px;
+        bottom: 20px;
+    }
+    .countdownnumbers{
+        font-size: 30px;
+    }
+    .progressbar{
+        height: 15px;
+    }
+    .progressbarindicator{
+        height: 15px;
+    }
+}
+
+
+
+
+@media (max-width:650px){
+    .countdownlabels{
+        font-size: 20px;
+    }
+    .colon{
+        font-size: 26px;
+        right: -20px;
+        bottom: 45px;
+    }
+    .countdownnumbers{
+        font-size: 30px;
+    }
+    .progressbar{
+        height: 10px;
+        width: 100%;
+    }
+    .progressbarindicator{
+        height: 10px;
+        width:100%;
+    }
+}
+
+
+@media (max-width:600px){
+    .startingtimer{
+        width: 98%;
+    }
+}
+
+
+
+@media (max-width:450px){
+    .newtimer{
+        gap: 30px;
+    }
+    .countdownlabels{
+        font-size: 16px;
+        margin: 0;
+    }
+    .colon{
+        font-size: 26px;
+        right: -20px;
+        bottom: 36px;
+    }
+    .countdownnumbers{
+        font-size: 20px;
+    }
+    .progressbar{
+        height: 10px;
+        width: 100%;
+    }
+    .progressbarindicator{
+        height: 10px;
+        width:100%;
+    }
+}
+
+
+@media (max-width:300px){
+    .startingtimer{
+        width: max-content;
+
+    }
+    .countdownlabels{
+        font-size: 10px;
+    }
+    .colon{
+        font-size: 26px;
+        right: -20px;
+        bottom: 35px;
+    }
+    .countdownnumbers{
+        font-size: 20px;
+    }
+    .progressbar{
+        height: 8px;
+        width: 100%;
+    }
+    .progressbarindicator{
+        height: 8px;
+        width:100%;
+    }
+}
