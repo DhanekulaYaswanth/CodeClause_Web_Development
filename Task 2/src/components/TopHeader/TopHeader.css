@@ -1,0 +1,178 @@
+.topcontainer{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: max-content;
+    justify-content: space-between;
+    height: max-content;
+    gap: 50px;
+    color: rgb(120, 118, 145);
+}
+
+.taskscount{
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.topcontainer>form{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 40px;
+    box-shadow: 0px 0px 10px rgba(223, 222, 251, 0.915);
+}
+
+
+.searchicon{
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    color: rgb(209, 209, 209);
+}
+
+.search:hover{
+    outline: 3px solid rgb(123, 0, 255);
+}
+
+.search:focus{
+    outline: 3px solid rgb(123, 0, 255);
+}
+
+
+.taskrep{
+    display: flex;
+    gap: 30px;
+    font-size: 30px;
+    align-items: center;
+}
+
+
+.list{
+    cursor: pointer;
+}
+
+.grid{
+    position: relative;
+    width: 37px;
+    height: 30px;
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.grid>label{
+    content: '';
+    border:3px solid gray;
+    width:12px;
+    height: 11px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+#gridbox,#listbox{
+    display: none;
+}
+
+
+#listbox:checked~.list{
+    color: rgb(136, 0, 255);
+}
+
+
+#gridbox:checked~.grid>label{
+    border-color: rgb(136, 0, 255);
+}
+
+
+.noresult{
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media (max-width:1600px) {
+    .search{
+        width: 400px;
+    }
+}
+
+
+@media (max-width:1450px) {
+    .topcontainer{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+
+        /* width: max-content;
+        height: max-content;
+        justify-content: space-between;
+        height: max-content;
+        gap: 50px;
+        color: rgb(120, 118, 145); */
+    }
+    .search{
+        width: 100%;
+    }
+    .tasklayoutgrid{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+@media (max-width:1200px) {
+    .search{
+        height: 30px;
+    }
+}
+
+
+@media (max-width:1100px){
+    .taskscount{
+        font-size: 26px;
+    }
+    .list{
+        font-size: 30px;
+    }
+    .grid{
+        align-items: center;
+    }
+
+    .grid>label{
+        content: '';
+        width:9px;
+        height: 8px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+}
+  

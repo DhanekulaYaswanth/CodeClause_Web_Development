@@ -1,0 +1,76 @@
+.leftContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.leftContainer>label{
+    font-size: 30px;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 700;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+.leftContainer>.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.leftContainer>.menu>button{
+    font-size: 23px;
+    height: 60px;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    padding-left: 20px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.leftContainer>.menu>.darktheme{
+    color: white;
+}
+
+
+.leftContainer>.menu>button:hover{
+    color: rgb(188, 116, 255);
+}
+
+.leftContainer>.menu>.active{
+    color: blueviolet;
+    border-right: 5px solid blueviolet;
+    background-color: rgba(235, 220, 250, 0.726);
+}
+
+
+.leftContainer>.menu>.darkactive{
+    color: rgb(86, 0, 167);
+    border-right: 5px solid blueviolet;
+    background-color: rgba(235, 220, 250, 0.726);
+}
+
+
+.leftContainer>.menu>.darkactive:hover{
+    color: rgb(72, 0, 255);
+}
+
+
+.menucount{
+    position: absolute;
+    right: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 18px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    background-color: pink;
+    color: rgb(10, 19, 46);
+}

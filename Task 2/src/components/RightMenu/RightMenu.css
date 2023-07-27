@@ -1,0 +1,295 @@
+.rightcontainer{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    transition: .3s;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.personal{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.personal>.profilepic{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 30px;
+    background-color: rgb(106, 0, 255);
+    font-weight: bolder;    
+    color: white;
+    box-shadow: 0px 0px 10px rgb(41, 40, 40),
+                0px 0px 10px rgb(0, 0, 0) inset;
+}
+
+
+.username{
+    font-size: 20px;
+    font-weight: bold;
+    margin:20px;
+    color: rgb(74, 74, 74);
+}
+
+
+
+.theme{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: max-content;
+    margin-bottom: 10px;
+}
+
+.theme>.themelabel{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(83, 83, 83);
+}
+
+
+#theme{
+    display: none;
+}
+
+.outer{
+    width: 70px;
+    height: 28px;
+    border-radius: 27px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px 5px rgb(116, 116, 116),
+                3px 3px 5px rgb(139, 139, 139) inset;
+                
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.693);
+    transition: .4s;
+}
+
+.outer::after{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    transition: .4s;
+    left: 3px;
+    top: 2.5px;
+    background-color: rgb(175, 90, 255);
+    box-shadow: 0px 0px 5px rgb(174, 174, 174), -3px -3px 5px rgba(36, 36, 36, 0.61) inset;
+}
+
+
+#theme:checked~.outer::after{
+    transform: translateX(41px);
+    top: 1.5px;
+    box-shadow: 0px 0px 5px rgb(174, 174, 174), 3px 3px 5px rgba(36, 36, 36, 0.61) inset;
+}
+
+
+#theme:checked~.outer{
+    box-shadow: -3px -3px 5px rgb(116, 116, 116),
+                -3px -3px 5px rgb(134, 134, 134) inset;
+}
+
+.taskprogress{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px dashed rgba(128, 128, 128, 0.578);
+}
+
+.counting{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasklabel{
+    font-size: 23px;
+    font-weight: 500;
+    font-family:monospace;
+    color: rgb(78, 78, 78);
+}
+
+.count{
+    font-size: 23px;
+    font-weight: 500;
+    font-family:monospace;
+    color: rgb(78, 78, 78);
+}
+
+.progressbarouter{
+    height: 15px;
+    border-radius: 26px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 5px gray,
+                0px 0px 5px gray inset;
+}
+
+.progressbarinner{
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    background-color: blueviolet;
+    transition: .1s;
+    box-shadow: 0px 0px 5px rgb(44, 44, 44),
+    0px -3px 5px rgba(0, 0, 0, 0.515) inset;
+}
+
+
+
+.todaytask{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    padding-bottom: 0px;
+    height: 60vh;
+    position: relative;
+}
+
+
+.todayheading{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.todaytasknamescontainer{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    gap: 5px;
+    height: max-content;
+}
+
+.todaytasksnames{
+    margin-left: 15px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+
+.clear{
+    padding: 20px;
+}
+
+
+.clear>button{
+    font-size: 23px;
+    color: red;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+.deletemenu{
+    position: absolute;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    top: 50%;
+    left:  50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 10px #ced6ffc3;
+  }
+  
+  
+  .deletemenu>.header{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .deletemenu>.header>label{
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(67, 71, 82);
+  }
+  
+  
+  .deletemenu>p{
+    font-size: 20px;
+    color: #868686;
+  }
+  
+  
+  .deletetaskbtn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .cancel{
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  .cancel:hover{
+    color: black;
+  }
+  
+  .deletetask{
+    border: none;
+    font-size: 26px;
+    background-color: rgb(93, 12, 255);
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .deletetask:hover{
+    background-color: rgb(131, 70, 255);
+  }
+
+
+  .notasks{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
